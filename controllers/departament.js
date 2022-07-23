@@ -10,8 +10,7 @@ const action = async (req, res) => {
     
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(result));
-    // res.status(201).json(result);
-    // console.log(res)
+    
   } catch (error) {
     console.log(error)
   }
