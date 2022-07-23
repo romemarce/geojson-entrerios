@@ -7,10 +7,7 @@ const action = async (req, res) => {
     let id = req.query.id;
 
     const result = await getDepartament(id);
-    res.status(201).json({
-      ok: true,
-      alturas: result,
-    });
+    res.status(201).json(result);
   } catch (error) {
     console.log(error)
   }
